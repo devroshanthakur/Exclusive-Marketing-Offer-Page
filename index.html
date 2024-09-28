@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exclusive Marketing Offer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2e7d32; 
+            --secondary-color: #66bb6a;  
+            --accent-color: #fdd835;  
+            --text-color: #333;
+            --bg-color: #f1f8e9; 
+            --white: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Form Section */
+        .form-section {
+            background-color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .form-section h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid var(--primary-color);
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Features Section */
+        .features {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: var(--light-green);
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+
+        .features h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: var(--white);
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial {
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial footer {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cta-btn, .submit-btn {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Exclusive Offer Just For You!</h1>
+            <p>Don't miss out on our special promotion. Limited-time offer!</p>
+            <a href="#signup" class="cta-btn">Get Started Now</a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Choose Us</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Fast & Efficient</h3>
+                    <p>Experience quick and effective service that saves you time and delivers results.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Affordable Pricing</h3>
+                    <p>Enjoy the best services at the most competitive prices, tailored to your needs.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our team is available round-the-clock to provide the help and guidance you need.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="signup">
+            <h2>Sign Up Now</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial">
+                <p>"This is by far the best service I've used. I highly recommend it!"</p>
+                <footer>- Rysun Dev; , CEO of XYZ Corp</footer>
+            </div>
+            <div class="testimonial">
+                <p>"Incredible results! I saw improvements in no time. Fantastic team!"</p>
+                <footer>- Jane Sharma , Entrepreneur</footer>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Exclusive Offer. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
